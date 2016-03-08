@@ -1,0 +1,11 @@
+//Modulos. Los estilos propios construdiso para el proyecto, estilos que van a aprecer en todo el proyecto que se ban a repetir o GENERICOS
+.section-title{
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Open Sans';
+	margin: 0 0 1.5em;
+	span{
+		display: block;
+		font-size: .7em;
+	}
+}

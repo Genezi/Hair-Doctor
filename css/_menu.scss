@@ -1,0 +1,64 @@
+#mostrar-menu{
+	background: #FFDE75;
+	padding-left: 1em;
+	line-height: 2.5;
+	a{
+		color: #547266;
+	}
+	span{
+		font-size: 2em;
+		color: #547266;
+	}
+
+	@include desde(web){
+		display: none;
+	}
+}
+
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@include hasta(web){
+		display: none;
+		background: lighten(#FFDE75, 10%);
+
+		&__link{
+		color: #547266;
+		padding-left: 1em;
+		line-height: 2.5;
+		
+			&:hover{
+				color: darken(#547266, 10%)
+			}
+		}
+	}
+
+
+	@include desde(web){
+		display: table;
+		float: right;
+		margin-top: 1.5em;
+
+		&__item{
+			float: left;
+		}
+
+		&__link{
+			line-height: 2.5;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 0 1.5em;
+			font-weight: 300;
+			font-family: 'Open Sans';
+			opacity: .7;
+			border-right: 1px solid rgba(#fff, .3);
+
+			&:hover{
+				color: #fff;
+				opacity: 1;
+			}
+		}
+	}	
+}

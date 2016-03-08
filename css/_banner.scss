@@ -1,0 +1,62 @@
+.banner{
+	margin-top: 1em;
+	position: relative;
+}
+
+.copy{
+	margin: 0;
+
+	&__title{
+		color: #FFDE75;
+		font-weight: 600;
+		margin: .5em 0 .3em;
+		text-transform: uppercase;
+		span{
+			font-weight: 300;
+			text-transform: none;
+		}
+	}
+
+	&__description{
+		font-size: .85em;
+		margin-bottom: 0;
+	}
+
+	&__button{
+		color: #FFF;
+		background: linear-gradient(darken(#547266, 10%), darken(#547266, 20%));
+		line-height: 2;
+		display: inline-block;
+		border-radius: 3px;
+		margin: .5em 0;
+		padding: 0 1em;
+		&:hover{
+			color: #FFDE75;
+		}
+	}
+}
+
+@include desde(tablet){
+	.copy{
+		color: #547266;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40%;
+		left: 2em;
+
+		&__title{
+			font-weight: 600;
+			font-size: 2.5em;
+			font-family: 'Open Sans';
+			color: #547266;
+			line-height: 1;
+
+			span{
+				display: block;
+				font-size: .6em;
+				line-height: 1;
+			}
+		}
+	}
+}

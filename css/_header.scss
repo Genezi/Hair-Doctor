@@ -1,0 +1,47 @@
+#header{
+	color: #fff;
+
+	@include hasta(tablet){
+		background: #547266;
+	}
+
+	@include desde(tablet){
+		background: linear-gradient(
+			        #547266 75%,
+			        transparent 75%
+			)
+	}
+
+}
+
+.logo{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2em;
+	color:#FFF;
+	font-family: 'Open Sans';
+	margin: .5em 0 0;
+	span{
+		font-weight: 600;
+		color: #FFDE75;
+	}
+
+	@include desde(web){
+		text-align: left;
+		line-height: 1;
+	}
+}
+
+.subtitle{
+	font-family: 'Roboto';
+	font-weight: 300;
+	opacity: .7;
+	text-align: center;
+	letter-spacing: -0.03em;
+	
+	@include desde(web){
+		text-align: left;
+		line-height: 1;
+	}
+}
